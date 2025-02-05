@@ -1,0 +1,10 @@
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.csproj.AssemblyReference.cache
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.Form1.resources
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.Properties.Resources.resources
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.csproj.GenerateResource.cache
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.csproj.CoreCompileInputs.cache
+C:\Git\C#\Supervisorio\Supervisorio\bin\Debug\Supervisorio.exe.config
+C:\Git\C#\Supervisorio\Supervisorio\bin\Debug\Supervisorio.exe
+C:\Git\C#\Supervisorio\Supervisorio\bin\Debug\Supervisorio.pdb
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.exe
+C:\Git\C#\Supervisorio\Supervisorio\obj\Debug\Supervisorio.pdb
