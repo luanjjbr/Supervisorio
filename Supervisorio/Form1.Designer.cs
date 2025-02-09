@@ -298,9 +298,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 284);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 19;
-            this.label5.Text = "######";
+            this.label5.Text = "***********";
             // 
             // Claw_checkBox
             // 

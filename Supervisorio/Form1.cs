@@ -407,7 +407,7 @@ namespace Supervisorio
                 // Adicionar vírgula, exceto no último elemento
                 if (i < points.Count - 1)
                 {
-                    sb.Append(",\n");
+                    sb.Append(",\r\n");
                 }
                 else
                 {
@@ -432,7 +432,7 @@ namespace Supervisorio
                 // Adicionar vírgula, exceto no último elemento
                 if (i < points.Count - 1)
                 {
-                    sb.Append(",\n");
+                    sb.Append(",\r\n");
                 }
                 else
                 {
