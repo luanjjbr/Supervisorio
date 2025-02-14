@@ -422,6 +422,7 @@ namespace Supervisorio
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < points.Count; i++)
             {
+                //frime 0xA2;X20;Y10;Z30/r 
                 Point point = points[i];
                 double[] angles = CalculateAngles(point.X, point.Y, point.Z, point.CLAW);
                 sb.Append($"X1 : {(int)angles[0]} ,");
@@ -443,6 +444,58 @@ namespace Supervisorio
             return sb.ToString();
         }
 
+        public string GetAllPointsAsJson_2(List<Point> points)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"0xA2;\r\n");
+            for (int i = 0; i < points.Count; i++)
+            {
+                Point point = points[i];
+                sb.Append($"X {point.X};");
+                sb.Append($"Y {point.Y};");
+                sb.Append($"Z {point.Z};");
+                sb.Append($"C {point.CLAW.ToString().ToLower()};");
+                // Adicionar vírgula, exceto no último elemento
+                // Adicionar vírgula, exceto no último elemento
+                if (i < points.Count - 1)
+                {
+                    sb.Append(" AD\r\n");
+                }
+                else
+                {
+                    sb.Append(" AD\r\nfim");
+                }
+            }
+
+            return sb.ToString();
+        }
+        public string GetAllPointsAsJson_Angle_2(List<Point> points)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"0xA2;\r\n");
+            for (int i = 0; i < points.Count; i++)
+            {
+                //frime 0xA2;X20;Y10;Z30/r 
+                Point point = points[i];
+                double[] angles = CalculateAngles(point.X, point.Y, point.Z, point.CLAW);
+                sb.Append($"X {(int)angles[0]};");
+                sb.Append($"Y {(int)angles[1]};");
+                sb.Append($"Z {(int)angles[2]};");
+                sb.Append($"C {(int)angles[3]};");
+                // Adicionar vírgula, exceto no último elemento
+                // Adicionar vírgula, exceto no último elemento
+                if (i < points.Count - 1)
+                {
+                    sb.Append(" AD\r\n");
+                }
+                else
+                {
+                    sb.Append(" AD\r\nfim");
+                }
+            }
+
+            return sb.ToString();
+        }
         public double[] CalculateAngles(int X, int Y, int Z, bool C)
         {
             double theta1 = 0, theta2 = 0, theta3 = 0, theta4 = 0;
@@ -482,8 +535,21 @@ namespace Supervisorio
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            label5.Text = GetAllPointsAsJson(points);
-            if (serialPort.IsOpen)
+            if (checkBox1.Checked)
+            {
+                label5.Text = GetAllPointsAsJson_2(points);
+            }
+            else if (!checkBox1.Checked)
+            {
+                label5.Text = GetAllPointsAsJson(points);
+            }
+
+            if (serialPort.IsOpen && checkBox1.Checked)
+            {
+                serialPort.WriteLine(GetAllPointsAsJson_2(points));
+                Thread.Sleep(100);
+            }
+            else if (serialPort.IsOpen && !checkBox1.Checked)
             {
                 serialPort.WriteLine(GetAllPointsAsJson(points));
                 Thread.Sleep(100);
@@ -492,8 +558,21 @@ namespace Supervisorio
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label5.Text = GetAllPointsAsJson_Angle(points);
-            if (serialPort.IsOpen)
+
+            if (checkBox1.Checked)
+            {
+                label5.Text = GetAllPointsAsJson_Angle_2(points);
+            }
+            else if (!checkBox1.Checked)
+            {
+                label5.Text = GetAllPointsAsJson_Angle(points);
+            }
+            if (serialPort.IsOpen && checkBox1.Checked)
+            {
+                serialPort.WriteLine(GetAllPointsAsJson_Angle_2(points));
+                Thread.Sleep(100);
+            }
+            else if(serialPort.IsOpen && !checkBox1.Checked)
             {
                 serialPort.WriteLine(GetAllPointsAsJson_Angle(points));
                 Thread.Sleep(100);

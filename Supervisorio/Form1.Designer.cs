@@ -47,6 +47,8 @@
             this.Enviar_bt = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Robot_groupBox = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.Z_number = new System.Windows.Forms.NumericUpDown();
@@ -243,6 +245,8 @@
             // 
             // Robot_groupBox
             // 
+            this.Robot_groupBox.Controls.Add(this.checkBox1);
+            this.Robot_groupBox.Controls.Add(this.label7);
             this.Robot_groupBox.Controls.Add(this.button3);
             this.Robot_groupBox.Controls.Add(this.label6);
             this.Robot_groupBox.Controls.Add(this.Z_number);
@@ -262,18 +266,38 @@
             this.Robot_groupBox.Controls.Add(this.listBox1);
             this.Robot_groupBox.Location = new System.Drawing.Point(392, 12);
             this.Robot_groupBox.Name = "Robot_groupBox";
-            this.Robot_groupBox.Size = new System.Drawing.Size(558, 505);
+            this.Robot_groupBox.Size = new System.Drawing.Size(559, 505);
             this.Robot_groupBox.TabIndex = 15;
             this.Robot_groupBox.TabStop = false;
             this.Robot_groupBox.Text = "Robot";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(216, 181);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(204, 17);
+            this.checkBox1.TabIndex = 24;
+            this.checkBox1.Text = "Mudar o formato dos dados enviados.";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(493, 488);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "version 0.4";
+            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(294, 153);
+            this.button3.Location = new System.Drawing.Point(310, 152);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 22);
+            this.button3.Size = new System.Drawing.Size(84, 22);
             this.button3.TabIndex = 22;
-            this.button3.Text = "send";
+            this.button3.Text = "Send Angles";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -289,6 +313,16 @@
             // Z_number
             // 
             this.Z_number.Location = new System.Drawing.Point(384, 40);
+            this.Z_number.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.Z_number.Minimum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            -2147483648});
             this.Z_number.Name = "Z_number";
             this.Z_number.Size = new System.Drawing.Size(45, 20);
             this.Z_number.TabIndex = 20;
@@ -314,11 +348,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(294, 125);
+            this.button2.Location = new System.Drawing.Point(310, 124);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 22);
+            this.button2.Size = new System.Drawing.Size(84, 22);
             this.button2.TabIndex = 18;
-            this.button2.Text = "send";
+            this.button2.Text = "Send points";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
@@ -333,9 +367,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(294, 97);
+            this.button1.Location = new System.Drawing.Point(310, 96);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(72, 22);
+            this.button1.Size = new System.Drawing.Size(84, 22);
             this.button1.TabIndex = 15;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = true;
@@ -343,9 +377,9 @@
             // 
             // update_BT
             // 
-            this.update_BT.Location = new System.Drawing.Point(294, 69);
+            this.update_BT.Location = new System.Drawing.Point(310, 67);
             this.update_BT.Name = "update_BT";
-            this.update_BT.Size = new System.Drawing.Size(72, 22);
+            this.update_BT.Size = new System.Drawing.Size(84, 22);
             this.update_BT.TabIndex = 14;
             this.update_BT.Text = "Update";
             this.update_BT.UseVisualStyleBackColor = true;
@@ -353,9 +387,9 @@
             // 
             // Edit_BT
             // 
-            this.Edit_BT.Location = new System.Drawing.Point(216, 125);
+            this.Edit_BT.Location = new System.Drawing.Point(216, 124);
             this.Edit_BT.Name = "Edit_BT";
-            this.Edit_BT.Size = new System.Drawing.Size(72, 22);
+            this.Edit_BT.Size = new System.Drawing.Size(84, 22);
             this.Edit_BT.TabIndex = 13;
             this.Edit_BT.Text = "Edit";
             this.Edit_BT.UseVisualStyleBackColor = true;
@@ -363,9 +397,9 @@
             // 
             // Delete_BT
             // 
-            this.Delete_BT.Location = new System.Drawing.Point(216, 97);
+            this.Delete_BT.Location = new System.Drawing.Point(216, 96);
             this.Delete_BT.Name = "Delete_BT";
-            this.Delete_BT.Size = new System.Drawing.Size(72, 22);
+            this.Delete_BT.Size = new System.Drawing.Size(84, 22);
             this.Delete_BT.TabIndex = 12;
             this.Delete_BT.Text = "Delete";
             this.Delete_BT.UseVisualStyleBackColor = true;
@@ -392,6 +426,16 @@
             // Y_number
             // 
             this.Y_number.Location = new System.Drawing.Point(310, 39);
+            this.Y_number.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.Y_number.Minimum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            -2147483648});
             this.Y_number.Name = "Y_number";
             this.Y_number.Size = new System.Drawing.Size(45, 20);
             this.Y_number.TabIndex = 10;
@@ -399,6 +443,16 @@
             // X_Number
             // 
             this.X_Number.Location = new System.Drawing.Point(236, 39);
+            this.X_Number.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.X_Number.Minimum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            -2147483648});
             this.X_Number.Name = "X_Number";
             this.X_Number.Size = new System.Drawing.Size(45, 20);
             this.X_Number.TabIndex = 9;
@@ -407,7 +461,7 @@
             // 
             this.NewPoint_BT.Location = new System.Drawing.Point(216, 69);
             this.NewPoint_BT.Name = "NewPoint_BT";
-            this.NewPoint_BT.Size = new System.Drawing.Size(72, 22);
+            this.NewPoint_BT.Size = new System.Drawing.Size(84, 22);
             this.NewPoint_BT.TabIndex = 8;
             this.NewPoint_BT.Text = "New Point";
             this.NewPoint_BT.UseVisualStyleBackColor = true;
@@ -491,6 +545,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown Z_number;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
