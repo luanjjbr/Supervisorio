@@ -1,0 +1,1206 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Solver" version="1.3.0.9126"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>e4a90835-60c5-4506-a4c7-7af2802379ce</id>
+      <revision>8</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <mixedNumbers>false</mixedNumbers>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>3</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true" hideElementsHighlightings="true">
+      <paper id="66" orientation="Portrait" width="1654" height="2339" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Core" version="1.73.9126.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.73.9126.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.73.9126.0" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.73.9126.0" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="18" top="18" width="493" height="87" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Ti</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">αi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">αi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ai</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">αi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">αi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">ai</e>
+          <e type="operand">θi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0</e>
+          <e type="operand">αi</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">αi</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">di</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="108" width="376" height="87" color="#000000" fontSize="10">
+      <text lang="cpp" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Link    θ (theta)    d (deslocamento)    a (distância)    α (alpha)<br />1         θ₁ = 0        d₁ = 0                      a₁ = 0               α₁ =\[REGION[f40304f25de841b7a1a6a4b65981b77a]]\ <br />2         θ₂ = 0        d₂ = 0                      a₂ = 92cm       α₂ = 0<br />3         θ₃ = 0        d₃ = 0                      a₃ = 92cm       α₃ = 0</p>
+        </content>
+        <regions>
+          <region id="f40304f25de841b7a1a6a4b65981b77a" left="336" top="15" width="22" height="41" color="#000000" fontSize="10">
+            <math>
+              <input>
+                <e type="operand">π</e>
+                <e type="operand">2</e>
+                <e type="operator" args="2">/</e>
+              </input>
+            </math>
+          </region>
+        </regions>
+      </text>
+    </region>
+    <region left="468" top="108" width="225" height="53" color="#000000" fontSize="10">
+      <text lang="cpp" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Junta 1: α1=-π/2, a1=0, θ1=0, d1=0<br />Junta 2: α2=0, a2=92, θ2=0, d2=0<br />Junta 3: α3=0, a3=92, θ3=0, d3=0</p>
+        </content>
+      </text>
+    </region>
+    <region left="513" top="171" width="70" height="41" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">α1</e>
+          <e type="operand">π</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="459" top="180" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ1</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="180" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a1</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="657" top="180" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d1</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="459" top="198" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="198" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a2</e>
+          <e type="operand">9.2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="657" top="198" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d2</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="513" top="207" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">α2</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="459" top="216" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ3</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="216" width="70" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">a3</e>
+          <e type="operand">9.2</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="657" top="216" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">d3</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="513" top="225" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">α3</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="252" width="587" height="87" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T1</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">a1</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">α1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">α1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">a1</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0</e>
+          <e type="operand">α1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">d1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="333" width="590" height="87" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T2</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">a2</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">α2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">α2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">a2</e>
+          <e type="operand">θ2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0</e>
+          <e type="operand">α2</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α2</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">d2</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">9.2</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="414" width="590" height="87" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T3</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">a3</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">α3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">α3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">a3</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0</e>
+          <e type="operand">α3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">α3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">d3</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">9.2</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="513" width="255" height="81" color="#000000" fontSize="10">
+      <math>
+        <description active="false" position="Top" lang="eng" width="15" />
+        <input>
+          <e type="operand">T03</e>
+          <e type="operand">T1</e>
+          <e type="operand">T2</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">T3</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">18.4</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="360" top="513" width="211" height="81" color="#000000" fontSize="10">
+      <math>
+        <description active="false" position="Top" lang="eng" />
+        <input>
+          <e type="operand">T1</e>
+          <e type="operand">T2</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">T3</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">18.4</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="603" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="126" top="603" width="46" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">y</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="180" top="603" width="58" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">z</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="639" width="218" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ1</e>
+          <e type="operand">y</e>
+          <e type="operand">x</e>
+          <e type="function" args="2">atan</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">rad</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.7854</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="675" width="172" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">r</e>
+          <e type="operand">x</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">y</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7.0711</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="711" width="172" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P</e>
+          <e type="operand">r</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">z</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.6603</e>
+        </result>
+      </math>
+    </region>
+    <region left="243" top="711" width="217" height="37" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P</e>
+          <e type="operand">r</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">z</e>
+          <e type="operand">d1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">8.6603</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="747" width="331" height="52" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ3</e>
+          <e type="operand">r</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">z</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">a2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">a3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">2</e>
+          <e type="operand">a2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">a3</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">acos</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">rad</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.1615</e>
+        </result>
+      </math>
+    </region>
+    <region left="414" top="747" width="295" height="52" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ3</e>
+          <e type="operand">P</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">a2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">a3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">2</e>
+          <e type="operand">a2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">a3</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">acos</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">rad</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">2.1615</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="837" width="479" height="28" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+          <e type="operand">z</e>
+          <e type="operand">r</e>
+          <e type="function" args="2">atan</e>
+          <e type="operand">a3</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">a2</e>
+          <e type="operand">a3</e>
+          <e type="operand">θ3</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="2">atan</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.6962</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="873" width="133" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">rad</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">1.6962</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="63" top="981" width="92" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ1</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.7854</e>
+        </result>
+      </math>
+    </region>
+    <region left="162" top="981" width="105" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.6962</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="279" top="981" width="92" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ3</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">2.1615</e>
+        </result>
+      </math>
+    </region>
+    <region left="63" top="1008" width="72" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ1</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">°</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">45</e>
+        </result>
+      </math>
+    </region>
+    <region left="162" top="1008" width="125" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">°</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">97.1869</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="279" top="1008" width="120" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ3</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">°</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">123.8449</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="1080" width="488" height="52" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+          <e type="operand">z</e>
+          <e type="operand">d1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">r</e>
+          <e type="function" args="2">atan</e>
+          <e type="operand">a2</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">P</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">d3</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">2</e>
+          <e type="operand">a2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">P</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">acos</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.6155</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0.0605</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="1134" width="224" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θ2</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">rad</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.6155</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0.0605</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+        </result>
+      </math>
+    </region>
+    <region top="1197" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="18" top="1359" width="243" height="85" color="#000000" fontSize="10">
+      <math>
+        <description active="false" position="Top" lang="eng" />
+        <input>
+          <e type="operand">T1</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">0</e>
+          <e type="operand">θ11</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">θ1</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">0</e>
+          <e type="operand">θ11</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="1503" width="296" height="85" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T2</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">0</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="1620" width="296" height="85" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T3</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">0</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1809" width="637" height="122" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T12</e>
+          <e type="operand">T1</e>
+          <e type="operand">T2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">4</e>
+          <e type="operand">2</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1908" width="1773" height="124" color="#000000" fontSize="10">
+      <math matrixOptions="0,0,4,4">
+        <input>
+          <e type="operand">T123</e>
+          <e type="operand">T12</e>
+          <e type="operand">T3</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ11</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ11</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">98174770424681</e>
+          <e type="operand">125000000000000</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">0</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">cos</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">cos</e>
+          <e type="operand">θ33</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">θ22</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="function" args="18">mat</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
